@@ -107,7 +107,7 @@ def urll():
         mixer.music.set_volume(1.0)
 
 
-    elif comdata[0] == "1":
+    if comdata[0] == "1":
         print("Playing  Track %d..... Re-Initialize if not playing!" % int(comdata[1]))
         mixer.music.set_volume(1)
         trackinfo(trackNo)
@@ -131,11 +131,7 @@ def urll():
     sleep(2)
     
     urll()
-def playTrack(x):
-    if x == '1':
-        print("Playing  Track %d..... Re-Initialize if not playing!" % int(x[1]))
-        mixer.music.set_volume(1)
-        trackinfo(trackNo)
+
 
 
 if __name__ == "__main__":
