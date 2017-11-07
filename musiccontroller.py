@@ -176,7 +176,6 @@ class MyStreamListener(tweepy.StreamListener):
         #filesWrite(time,user1.screen_name,data.text)
         print('----------------------------------------------')
         #comdata = data.text.split()
-
         #if data.text == 'play' or 'Play':
 
 
