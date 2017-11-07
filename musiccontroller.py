@@ -168,6 +168,7 @@ class MyStreamListener(tweepy.StreamListener):
     def on_status(self, data):
         x = randint(1, 119)
         user1 = data.user
+        
         time = data.created_at
         print(data.text)
         print(user1.screen_name)
